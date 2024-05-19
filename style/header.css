@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	font-size: 1.3em;
+	padding-inline: 200px; 	
+	position: sticky;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	box-shadow: 0px -4px 5px 13px rgba(0, 0, 0, 0.1);
+}
+.header a {
+	text-decoration: none;
+}
+
+.header-logo img {
+	width: 130px;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: center;
+}
+
+.nav-element {
+	margin-inline: 20px;
+}
+
+.nav-element a {
+	color: rgb(255, 183, 0);
+}
+
+.header-input {
+	width: 50px;
+	border-radius: 20px;
+	border: 0.5px solid rgb(255, 183, 0);
+	padding: 10px;
+	transition: all 0.5s linear;
+}
+
+.header-input.active {
+	width: 500px;
+}
+
+.search-icon {
+	width: 40px;
+}
+
+.search-icon:hover {
+	cursor: pointer;
+}
+
+.header-autorization {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-autorization a {
+	margin-inline: 3px;
+}
+
+/* модальное окно регистрации */
+
+.inputsInModalRegistration {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputsInModalRegistration .inputEmailToAutorization,
+.inputsInModalRegistration .inputPassowrdToAutorization,
+.fReg {
+	padding: 25px;
+	margin-block: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+.ref-modal {
+	text-decoration: none;
+	color: black;
+}
+
+.inputToAutorizationBtn {
+	background-color: rgba(255, 183, 0, 0.705);
+}
+
+.inputToAutorizationBtn:hover {
+	background-color: rgb(255, 183, 0);
+}
+
+.inputToAutorizationBtn:hover,
+.inputToRegistrationBtn:hover {
+	cursor: pointer;
+}
+
+.buttonsInAutorization .inputToRegistrationBtn {
+	background-color: rgba(214, 213, 213, 0.753);
+	border: none;
+}
+
+.inputToRegistrationBtn:hover {
+	background-color: rgb(214, 213, 213);
+}
+
+.buttonsInAutorization .inputToAutorizationBtn,
+.buttonsInAutorization .inputToRegistrationBtn {
+	padding: 25px;
+	margin-block: 10px;
+}

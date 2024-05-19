@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=\, initial-scale=1.0" />
+		<title>FlightPool</title>
+		<link rel="stylesheet" href="style/header.css" />
+		<link rel="stylesheet" href="style/main.css" />
+		<link rel="stylesheet" href="style/modal.css" />
+		<link rel="stylesheet" href="style/footer.css" />
+		<link rel="stylesheet" href="style/profile.css" />
+		<link rel="stylesheet" href="style/media.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<div class="wrapper-to-all-page">
+			<div class="header">
+				<div class="header-logo">
+					<a href="index.html"
+						><img src="media/logo.png" alt="" class="test-0-logo"
+					/></a>
+				</div>
+				<div class="nav-menu">
+					<div class="test-0-nav-2 header-search nav-element">
+						<a href="#anchorSearch"
+							><img class="search-icon" src="media/searchicon.png" alt=""
+						/></a>
+					</div>
+					<div class="test-0-nav-1 header-stocks nav-element">
+						<a href="#scroll-to-offers">Акции</a>
+					</div>
+					<div
+						onclick="openModal('.modal2')"
+						class="test-0-nav-4 header-autorization nav-element"
+					>
+						<a href="#">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 16 16"
+								fill="none"
+								class=""
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M1.75 13.28C1.75 10.842 5.917 9.5 8 9.5c2.084 0 6.25 1.341 6.25 3.78v1.22H1.75v-1.22zM11.5 5c0 1.937-1.563 3.5-3.5 3.5A3.495 3.495 0 014.5 5c0-1.937 1.564-3.5 3.5-3.5 1.937 0 3.5 1.563 3.5 3.5z"
+									fill="currentColor"
+								></path></svg
+						></a>
+						<div class="profile-name"><a id="username" href="#">Войти</a></div>
+					</div>
+				</div>
+			</div>
+			<div id="startPage" class="sectionpr">
+				<div class="profile-wrapper">
+					<div class="left-side-section main-profile-inf">
+						<div class="wrapper-profile">
+							<div class="top-profile">
+								<div class="photo-profile">
+									<img src="media/unknownusers.png" alt="" />
+								</div>
+								<div class="text-profile">
+									<p class="main-text-style">Имя: Максим</p>
+									<p class="main-text-style">Фамилия: Хомяков</p>
+									<p class="main-text-style">Номер телефона: 8 800 100 10 10</p>
+									<p class="main-text-style">Email: qwerty1@gmail.com</p>
+									<p class="main-text-style">Полетов: 12</p>
+								</div>
+							</div>
+							<hr class="hr-prof" />
+							<div class="bottom-profile">
+								<p class="main-text-style">Предстоящие бронирования:</p>
+								<div class="bookings-profile">
+									<div class="booking">
+										<p class="booking-code">Код бронирования: XYU-89</p>
+										<p class="dep-dt">Дата вылета: 17.10.2024</p>
+										<p class="time-dep">Время вылета: 12:20</p>
+										<p class="time-arr">Время прилета: 14:30</p>
+										<p class="air-dep">Аэропорт вылета: Шереметьево</p>
+										<p class="air-arr">Аэропорт назначения: Bodrum</p>
+									</div>
+									<div class="booking">
+										<p class="booking-code">Код бронирования: FGH-95</p>
+										<p class="dep-dt">Дата вылета: 09.07.2024</p>
+										<p class="time-dep">Время вылета: 03:35</p>
+										<p class="time-arr">Время прилета: 07:45</p>
+										<p class="air-dep">Аэропорт вылета: Шереметьево</p>
+										<p class="air-arr">
+											Аэропорт назначения: Dubai International
+										</p>
+									</div>
+									<div class="booking">
+										<p class="booking-code">Код бронирования: LDS-61</p>
+										<p class="dep-dt">Дата вылета: 12.04.2024</p>
+										<p class="time-dep">Время вылета: 17:50</p>
+										<p class="time-arr">Время прилета: 21:20</p>
+										<p class="air-dep">Аэропорт вылета: Шереметьево</p>
+										<p class="air-arr">
+											Аэропорт назначения: Charles de Gaulle
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rigth-side-section settings-in-profile">
+						<div class="wrapper-settings">
+							<ul>
+								<li class="set-btn">
+									<button onclick="returnToMainPage()">
+										Выйти из аккаунта
+									</button>
+								</li>
+								<li class="set-btn"><p>Настроить профиль</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-container-1">
+					<a href="index.html">Домой</a>
+					<a onclick="openModal('.modal2')" href="#"
+						>Авторизоваться/Зарегистрироваться</a
+					>
+					<a href="#scroll-to-offers">Новости</a>
+					<a href="#startPage">В начало</a>
+				</div>
+				<hr style="opacity: 0.4; margin-block: 5px" />
+				<div class="footer-container-2">
+					<p class="footer-weigth-text" href="#">Обратная связь</p>
+					<p class="footer-weigth-text" href="#">Контакт</p>
+				</div>
+				<div class="footer-container-3">
+					<div class="left-side">
+						<span
+							class="icon-in-footer ___ref-icon ds-IconButton-icon ds-BaseButton-icon ds-IconButton-leftIcon ds-BaseButton-leftIcon ds-e1d4ar"
+							><svg
+								class="ds-SvgIcon-root ds-7wz2ig"
+								width="32"
+								height="32"
+								fill="none"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill="currentColor"
+									fill-rule="evenodd"
+									d="M15.652 1.953a.66.66 0 0 0-.9-.71L.633 6.965C.056 7.2.095 8.03.692 8.209L4 9.202l1.521 4.945a.5.5 0 0 0 .84.198l2.102-2.102 4.25 2.833a.66.66 0 0 0 1.018-.45zM5.2 8.913l5.714-3.334L6.61 9.882a1.3 1.3 0 0 0-.35.637l-.339 1.527-.857-2.786a.3.3 0 0 1 .135-.348"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+						</span>
+						<span
+							class="icon-in-footer ___ref-icon ds-IconButton-icon ds-BaseButton-icon ds-IconButton-leftIcon ds-BaseButton-leftIcon ds-1r2ws9t"
+							><svg
+								class="ds-SvgIcon-root ds-1agvdoc"
+								width="32"
+								height="32"
+								fill="none"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill="currentColor"
+									fill-rule="evenodd"
+									d="M15.633 3.843c.111-.37 0-.643-.53-.643h-1.75c-.445 0-.65.235-.761.495 0 0-.89 2.17-2.152 3.579-.407.408-.593.538-.816.538-.11 0-.272-.13-.272-.5V3.842c0-.445-.129-.643-.5-.643h-2.75c-.279 0-.446.207-.446.402 0 .422.63.52.695 1.706v2.578c0 .565-.102.668-.324.668-.594 0-2.037-2.18-2.893-4.674-.168-.484-.336-.68-.783-.68H.6C.1 3.2 0 3.435 0 3.695c0 .464.593 2.763 2.763 5.804 1.447 2.077 3.484 3.203 5.339 3.203 1.113 0 1.25-.25 1.25-.68v-1.57c0-.5.106-.6.458-.6.26 0 .705.13 1.743 1.13 1.187 1.188 1.383 1.72 2.05 1.72h1.75c.5 0 .75-.25.607-.743-.158-.492-.725-1.206-1.477-2.052-.408-.482-1.02-1.001-1.205-1.26-.26-.334-.186-.483 0-.78 0 0 2.132-3.004 2.355-4.024"
+									clip-rule="evenodd"
+								></path></svg
+						></span>
+						<span
+							class="icon-in-footer ___ref-icon ds-IconButton-icon ds-BaseButton-icon ds-IconButton-leftIcon ds-BaseButton-leftIcon ds-1r2ws9t"
+							><svg
+								class="ds-SvgIcon-root ds-1agvdoc"
+								width="32"
+								height="32"
+								fill="none"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill="currentColor"
+									fill-rule="evenodd"
+									d="M8.036 2.4c.455 0 5.035.017 6.224.343a2 2 0 0 1 1.41 1.41C16 5.354 16 7.806 16 8.002v.04c-.001.282-.02 2.645-.33 3.82a2 2 0 0 1-1.41 1.411c-1.177.31-5.673.328-6.208.33h-.104c-.534-.002-5.02-.021-6.208-.343a2 2 0 0 1-1.41-1.41C.02 10.686 0 8.313 0 8.03v-.056c.001-.282.02-2.645.33-3.821a2.05 2.05 0 0 1 1.41-1.424c1.19-.313 5.768-.328 6.223-.329zm-1.63 3.203V10.4l4.164-2.399z"
+									clip-rule="evenodd"
+								></path></svg
+						></span>
+					</div>
+					<div class="rigth-side">
+						<span class="text-in-rs test-0-phone">Тел: 8 (800) 100-10-10</span>
+						<span
+							class="icon-in-footer ___ref-icon ds-IconButton-icon ds-BaseButton-icon ds-IconButton-leftIcon ds-BaseButton-leftIcon ds-e1d4ar"
+							><svg
+								class="ds-SvgIcon-root ds-7wz2ig"
+								width="32"
+								height="32"
+								fill="none"
+								viewBox="0 0 16 16"
+							>
+								<g clip-path="url(#Phone_svg__clip0_869_5475)">
+									<path
+										fill="currentColor"
+										d="M4.408 11.563C6.917 14.069 9.95 16 12.425 16c1.1 0 2.075-.391 2.858-1.249.45-.508.717-1.082.717-1.656 0-.475-.175-.924-.625-1.24l-2.567-1.824c-.408-.291-.75-.424-1.058-.424-.4 0-.75.224-1.142.616l-.616.607a.45.45 0 0 1-.325.125.8.8 0 0 1-.35-.1c-.525-.291-1.442-1.074-2.284-1.906-.833-.84-1.625-1.748-1.908-2.281a.8.8 0 0 1-.1-.35c0-.108.033-.224.125-.316l.608-.624c.392-.392.617-.741.617-1.14 0-.309-.133-.65-.425-1.058L4.133.633C3.817.19 3.35 0 2.858 0c-.566 0-1.141.241-1.641.716C.375 1.506 0 2.489 0 3.588c0 2.472 1.908 5.478 4.408 7.975"
+									></path>
+								</g>
+								<defs>
+									<clipPath id="Phone_svg__clip0_869_5475">
+										<path fill="white" d="M0 0h16v16H0z"></path>
+									</clipPath>
+								</defs></svg
+						></span>
+					</div>
+				</div>
+				<div class="footer-container-4">
+					<p>© 2024. FlightPool — Все пpава защищены</p>
+					<p>Хомяков Максим Павлович</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-windows">
+			<div class="modal">
+				<div class="modal-box modal-follow-offers">
+					<button onclick="closeModal('.modal')" class="modal-box-close">
+						<svg
+							width="23"
+							height="25"
+							viewBox="0 0 23 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+								fill="#333333"
+							/>
+							<path
+								d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+								fill="#333333"
+							/>
+						</svg>
+					</button>
+					<p style="color: rgba(0, 0, 0, 0.753)" class="main-text-style">
+						Подписка на акции
+					</p>
+					<p style="color: rgba(0, 0, 0, 0.753)" class="title-text">
+						Новые скидки и акции FligthPool придут на вашу почту:
+					</p>
+					<div>
+						<input
+							style="border: 1px solid rgba(0, 0, 0, 0.445)"
+							class="inp inputEmailToFollow test-0-sie"
+							pattern=".+@example\.com"
+							type="email"
+							placeholder="Email:"
+							name=""
+							id=""
+							required
+						/>
+					</div>
+					<p style="text-align: center">
+						<input
+							class="checkbox-in-email-modal"
+							type="checkbox"
+							name=""
+							id=""
+						/>
+						Я подтверждаю согласие с условиями обработки персональных данных.
+					</p>
+					<div class="feedbackInEmailModal"></div>
+					<div class="submitBtn in-Modal">
+						<input
+							onclick="checkModalWithEmail ()"
+							type="button"
+							value="Подписаться"
+							class="test-0-sbs"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="modal2">
+				<div class="modal-box modal-autorization">
+					<button onclick="closeModal('.modal2')" class="modal-box-close">
+						<svg
+							width="23"
+							height="25"
+							viewBox="0 0 23 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+								fill="#333333"
+							/>
+							<path
+								d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+								fill="#333333"
+							/>
+						</svg>
+					</button>
+					<p style="color: rgba(0, 0, 0, 0.753)" class="main-text-style">
+						Вход в личный кабинет
+					</p>
+					<div class="inputsInModalRegistration">
+						<input
+							placeholder="Email / Номер телефона"
+							type="email"
+							class="inputEmailToAutorization inp"
+						/>
+						<input
+							placeholder="Пароль"
+							type="password"
+							class="inputPassowrdToAutorization inp"
+						/>
+						<div class="feedbackInEmailModal2"></div>
+						<a class="ref-modal" href="#">Забыли пароль?</a>
+						<div class="buttonsInAutorization">
+							<input
+								onclick="clickToSignIn()"
+								type="button"
+								class="inputToAutorizationBtn inp"
+								value="Войти"
+							/>
+							<input
+								onclick="clickToSignUp()"
+								type="button"
+								class="inputToRegistrationBtn inp"
+								value="Зарегистрироваться"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal3">
+				<div class="modal-box modal-autorization">
+					<button onclick="closeModal('.modal3')" class="modal-box-close">
+						<svg
+							width="23"
+							height="25"
+							viewBox="0 0 23 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+								fill="#333333"
+							/>
+							<path
+								d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+								fill="#333333"
+							/>
+						</svg>
+					</button>
+					<p style="color: rgba(0, 0, 0, 0.753)" class="main-text-style">
+						Регистрация
+					</p>
+					<div class="inputsInModalRegistration">
+						<input
+							placeholder="Имя"
+							type="email"
+							class="inputNameReg inp fReg test-2-name"
+						/>
+						<input
+							placeholder="Фамилия"
+							type="email"
+							class="inputSurnameReg inp fReg test-2-last"
+						/>
+						<input
+							placeholder="Номер документа"
+							type="email"
+							class="inputDocReg inp fReg test-2-doc"
+						/>
+						<input
+							placeholder="Email / Номер телефона"
+							type="email"
+							class="inputEmailToFinallyRegistration inp fReg test-2-phone"
+						/>
+						<input
+							placeholder="Пароль"
+							type="password"
+							class="inputPassowrdToFinallyRegistration inp fReg test-2-pass"
+						/>
+						<input
+							placeholder="Повторите пароль"
+							type="password"
+							class="inputRepPass inp fReg test-2-pass2"
+						/>
+						<div class="feedbackInEmailModal3"></div>
+						<div class="buttonsInAutorization">
+							<input
+								onclick="clickToFinallyRegistration()"
+								type="button"
+								class="inputToAutorizationBtn inp test-2-btn"
+								value="Зарегистрироваться"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script defer src="js/script.js"></script>
+	</body>
+</html>

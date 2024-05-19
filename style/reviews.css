@@ -1,0 +1,31 @@
+.reviews-wrapper {
+	margin-inline: 25%;
+	margin-top: 25px;
+}
+
+.all-reviews {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 10px;
+	column-gap: 10px;
+	margin-top: 25px;
+}
+
+.review {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+	-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+.review-img img {
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+.review-text-description {
+	padding: 10px;
+	text-align: center;
+}

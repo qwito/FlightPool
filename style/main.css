@@ -1,0 +1,48 @@
+.relative-wrap-to-search-and-offers {
+	position: relative;
+}
+
+.main-text-style {
+	color: rgb(255, 183, 0);
+	font-size: 2em;
+	text-align: center;
+	font-weight: 500;
+}
+
+.inp {
+	border: 1px solid rgb(255, 183, 0);
+	font-size: 1.3em;
+	padding-inline: 5px;
+	width: 50%;
+	display: inline-block;
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	margin-inline: 5px;
+}
+
+.title-text {
+	color: rgb(255, 183, 0);
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.errorInCheck {
+	text-align: center;
+	color: red;
+}
+
+.text-grey-color {
+	color: rgba(0, 0, 0, 0.753);
+}
+.wrapper-to-all-page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.fReg {
+	padding: 25px;
+	margin-block: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.329);
+}
